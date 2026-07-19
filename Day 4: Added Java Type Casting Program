@@ -1,0 +1,46 @@
+public class TypeCasting {
+    public static void main(String[] args) {
+
+        // 1. Implicit Casting (int to double)
+        int a = 100;
+        double b = a;
+        System.out.println("1. Int to Double");
+        System.out.println("Integer: " + a);
+        System.out.println("Double : " + b);
+
+        // 2. Explicit Casting (double to int)
+        double c = 99.99;
+        int d = (int) c;
+        System.out.println("\n2. Double to Int");
+        System.out.println("Double : " + c);
+        System.out.println("Integer: " + d);
+
+        // 3. Character to Integer
+        char ch = 'A';
+        int ascii = ch;
+        System.out.println("\n3. Char to Int");
+        System.out.println("Character : " + ch);
+        System.out.println("ASCII Value: " + ascii);
+
+        // 4. Integer to Character
+        int num = 66;
+        char letter = (char) num;
+        System.out.println("\n4. Int to Char");
+        System.out.println("Integer  : " + num);
+        System.out.println("Character: " + letter);
+
+        // 5. Float to Integer
+        float f = 25.75f;
+        int i = (int) f;
+        System.out.println("\n5. Float to Int");
+        System.out.println("Float   : " + f);
+        System.out.println("Integer : " + i);
+
+        // 6. Byte to Long
+        byte bt = 10;
+        long l = bt;
+        System.out.println("\n6. Byte to Long");
+        System.out.println("Byte : " + bt);
+        System.out.println("Long : " + l);
+    }
+}
