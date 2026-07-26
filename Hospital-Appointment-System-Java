@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class HospitalAppointment {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int choice = 0;
+        int token = 1;
+
+        while (choice != 4) {
+
+            System.out.println("\n===== Hospital Appointment System =====");
+            System.out.println("1. Book Appointment");
+            System.out.println("2. View Next Token");
+            System.out.println("3. Cancel Appointment");
+            System.out.println("4. Exit");
+            System.out.print("Enter Choice: ");
+
+            choice = sc.nextInt();
+            sc.nextLine();
+
+            if (choice == 1) {
+
+                System.out.print("Enter Patient Name: ");
+                String name = sc.nextLine();
+
+                System.out.println("Appointment Booked Successfully!");
+                System.out.println("Patient : " + name);
+                System.out.println("Token No: " + token);
+
+                token++;
+
+            } else if (choice == 2) {
+
+                System.out.println("Next Available Token: " + token);
+
+            } else if (choice == 3) {
+
+                System.out.print("Enter Token Number to Cancel: ");
+                int cancel = sc.nextInt();
+
+                System.out.println("Appointment with Token " + cancel + " Cancelled Successfully.");
+
+            } else if (choice == 4) {
+
+                System.out.println("Thank You! Visit Again.");
+
+            } else {
+
+                System.out.println("Invalid Choice!");
+            }
+        }
+
+        sc.close();
+    }
+}
